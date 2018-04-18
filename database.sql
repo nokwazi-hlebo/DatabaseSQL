@@ -11,8 +11,18 @@ CREATE database store;
 */
 
 
+CREATE TABLE movies (
+	movie_id int(255) AUTO_INCREMENT PRIMARY KEY,
+	movie_title varchar(255),
+	movie_released_year int(4),
+	movie_length int(225),
+	movie_language varchar(225)
+);
 
 
+
+
+/*4. Create a script to add the following data inside the table  the table:*/
 INSERT INTO `movies` (`movie_id`, `movie_title`, `movie_release_year`, `movie_length`, `movie_language`) VALUES (NULL, 'Vertigo', '1958', '128', 'English');
 
 INSERT INTO `movies` (`movie_id`, `movie_title`, `movie_release_year`, `movie_length`, `movie_language`) VALUES (NULL, 'The Innocents', '1961', '100', 'English');
